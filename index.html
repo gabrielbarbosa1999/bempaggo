@@ -20,24 +20,37 @@
 
         <!-- Iniciando formulario-->
         <section class="form">
-            <fieldset>
-                <legend>Quais adesivos?</legend>
-                <input type="checkbox" id="React" name="react" value="React">
-                <label for="react"> React</label><br>
+            <form method="POST">
+                <fieldset>
+                    <legend>Quais adesivos?</legend>
+                    <input type="checkbox" id="React" name="react" value="React">
+                    <label for="react"> React</label><br>
 
-                <input type="checkbox" id="Vue" name="vue" value="Vue">
-                <label for="vue"> Vue</label><br>
+                    <input type="checkbox" id="Vue" name="vue" value="Vue">
+                    <label for="vue"> Vue</label><br>
 
-                <input type="checkbox" id="Angular" name="angular" value="Angular">
-                <label for="angular"> Angular</label><br><br>
-            </fieldset>
+                    <input type="checkbox" id="Angular" name="angular" value="Angular">
+                    <label for="angular"> Angular</label><br><br>
+                </fieldset>
 
-            <fieldset>
-                <legend> </legend>
-                <input min=1 id="total" type="number">
-                <button onclick="menos()" class="a">-</button>
-                <button onclick="mais()" class="b">+</button>
-            </fieldset>
+                <fieldset>
+                    <legend>Quantidade:</legend>
+                    <!-- Aqui usei uma funcao simples para manipular o formulario usando JavaScript-->
+                    <a onclick="menos()"> -</a>
+                    <input min="1" id="quantidade" type="number" value="1">
+                     <!-- Aqui usei uma funcao simples para manipular o formulario usando JavaScript-->
+                    <a onclick="mais()"> + </a>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Observação:</legend>
+                    <textarea name="observacao" id="observacao" placeholder="Alguma dúvida? Complemento, recado!"></textarea>
+                </fieldset>
+
+                <div class="footer-form">
+                    <button>Enviar</button>
+                </div>
+            </form>
         </section>
     </div>
 
