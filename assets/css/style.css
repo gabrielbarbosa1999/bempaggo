@@ -1,11 +1,92 @@
+/* Importando Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+/* Definindo Tags Basicas para todas Tag, Classes etc.. */
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-header {
-    height: 300px;
+/* Centralizando conteudo do body usando flexbox */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eeeeee;
+}
+
+/* Box central */
+.box {
+    height: 800px;
     width: 100%;
-    background-image: url('../images/fundo.svg');
-    background-size: cover;
+    max-width: 600px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    -webkit-box-shadow: 1px 1px 10px 4px #484848; 
+    box-shadow: 1px 1px 10px 4px #484848;
+}
+
+/* Elementos do Header */
+header {
+    height: 250px;
+    background-color: #1565c0;
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+}
+header h1 {
+    line-height: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 100;
+}
+header h1 span {
+    font-weight: 700;
+}
+header svg {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: inherit;
+}
+
+/* Elementos do Formulario */
+.form {
+    padding: 20px;
+    font-size: 17px;
+}
+.form fieldset input[type=checkbox] {
+    margin-left: 20px;
+}
+.form fieldset {
+    border: none;
+}
+
+input[type="number"] {
+    appearance: textfield;
+}
+input[type="number"]{
+    outline:none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+button{
+    height:20px;
+    padding:1%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: white;
+    border-left: 0px solid black;
+    padding-left:2%;
+    padding-right:2%;
+    outline:none;
+    cursor: pointer;
 }

@@ -9,10 +9,38 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Box central - Aqui se encontra todo conteudo do formulario-->
+    <div class="box">
+        <!-- Aqui se encontra o header do forumario (E header da pagina em si!)-->
+        <header>
+            <h1>Comprar <span>Pacotes de Adesivos</span></h1>
+            <!-- Divisao ondulada no final do header-->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="#fff" fill-opacity="1" d="M0,256L60,250.7C120,245,240,235,360,208C480,181,600,139,720,149.3C840,160,960,224,1080,224C1200,224,1320,160,1380,128L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        </header>
 
-    <!-- Cabecalho do Site -->
-    <header>
-        
-    </header>
+        <!-- Iniciando formulario-->
+        <section class="form">
+            <fieldset>
+                <legend>Quais adesivos?</legend>
+                <input type="checkbox" id="React" name="react" value="React">
+                <label for="react"> React</label><br>
+
+                <input type="checkbox" id="Vue" name="vue" value="Vue">
+                <label for="vue"> Vue</label><br>
+
+                <input type="checkbox" id="Angular" name="angular" value="Angular">
+                <label for="angular"> Angular</label><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend> </legend>
+                <input min=1 id="total" type="number">
+                <button onclick="menos()" class="a">-</button>
+                <button onclick="mais()" class="b">+</button>
+            </fieldset>
+        </section>
+    </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
