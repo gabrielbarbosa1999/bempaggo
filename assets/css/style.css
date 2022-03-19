@@ -150,10 +150,33 @@ header svg {
 }
 
 /* O formulario esta praticamente todo responsivel
-Aqui somente alteramos o tamanho da font do header quando o maximo da tela for 360px (Celular) */
+Aqui somente alteramos o tamanho da font do header quando o maximo da tela for 360px (Celular) 
+E o tamanho to box para ocupar a tela toda quando o maximo de largura for 600px*/
+@media (min-width: 360px) and (max-width: 601px) {
+    .box {
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    .form .footer-form {
+        border-radius: 0;
+    }
+}
+
 @media (max-width: 360px) {
     header h1 {
         font-size: 30px;
+    }
+
+    .box {
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    .form .footer-form {
+        border-radius: 0;
     }
 }
 
