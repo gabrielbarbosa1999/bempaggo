@@ -36,10 +36,13 @@ header {
     position: relative;
     border-radius: 10px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
 }
 /* Estilizando titulo principal do nosso header */
 header h1 {
-    line-height: 200px;
+    margin-top: -50px;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
@@ -144,5 +147,13 @@ header svg {
     border-radius: 10px;
     font-weight: 300;
     cursor: pointer;
+}
+
+/* O formulario esta praticamente todo responsivel
+Aqui somente alteramos o tamanho da font do header quando o maximo da tela for 360px (Celular) */
+@media (max-width: 360px) {
+    header h1 {
+        font-size: 30px;
+    }
 }
 
