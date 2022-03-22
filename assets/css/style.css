@@ -73,7 +73,7 @@ header svg {
 /*Aplicando estilo no fieldset e legend do formulario */
 .form fieldset {
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .form legend {
     font-size: 18px;
